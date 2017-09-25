@@ -1,0 +1,243 @@
+{
+  "shops": [
+    {
+      "id": "Brisbane",
+      "address": "23 Lanchester street, Croydon",
+      "contact": "Mrs Lee Wonder",
+      "email": "brisbane001@cleanwater.com",
+      "phone": "(07)-2380002",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "Newmarket",
+      "address": "12 pines road, newmarket",
+      "contact": "Mrs Shirley Shimpes",
+      "email": "newmarket01@cleanwater.com",
+      "phone": "(07)-2380002",
+      "timeslots": [
+        "9:00",
+        "1:30"
+      ]
+    },
+    {
+      "id": "Kedron",
+      "address": "82 old north road, kedron",
+      "contact": "Mrs Vani Gupta",
+      "email": "kedron001@cleanwater.com",
+      "phone": "(07)-2380002",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "Oxley",
+      "address": "78 church road, oxley",
+      "contact": "Mr Chetan Bhagat",
+      "email": "oxley001@cleanwater.com",
+      "phone": "(07)-2380002",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "Hamilton",
+      "address": "123 pringles road, hamilton",
+      "contact": "Mr Chris Gale",
+      "email": "hamilton@cleanwater.com",
+      "phone": "07 3434332",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "Twoomba",
+      "address": "123 pringles road, twoomba",
+      "contact": "Mr Tim tam",
+      "email": "twoomba@cleanwater.com",
+      "phone": "07 3434332",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "%@brs",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "2000",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "@brs",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "fsfdsfsdfsdfsdfsdfsdfsdfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfsdfsdfsdfsdfsdfsdfdsfsdf",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "BkPORUrs-",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ],
+      "id": "BJxPu0LHsb"
+    },
+    {
+      "id": "200.9",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "Gold coast",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "id": "SJ7QYXUj-",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ],
+      "id": "S1xXmY7Ij-"
+    },
+    {
+      "id": "H1FcYmUsb",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ],
+      "id": "BJeYqFmIib"
+    },
+    {
+      "id": "Hkzy9Q8oW",
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ]
+    },
+    {
+      "address": "some address",
+      "contact": "some one",
+      "email": "some@cleanwaters.com",
+      "phone": "343434",
+      "timeslots": [
+        "9:00",
+        "10:00",
+        "11:00"
+      ],
+      "id": "ByeM15mUib"
+    }
+  ]
+}

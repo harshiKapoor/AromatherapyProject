@@ -1,0 +1,23 @@
+
+{
+  "prices": [
+    {
+      "id":"01",
+      "therapy": "Essential oils",
+      "price":"$50",
+      "time":"1hr"
+    },
+    {
+      "id":"02",
+      "therapy": "Clay mask",
+      "price":"$80",
+      "time":"1hr"
+    },
+    {
+      "id":"03",
+      "therapy":"Sea salt",
+      "price":"$70",
+      "time":"1hr"
+    }
+  ]
+}

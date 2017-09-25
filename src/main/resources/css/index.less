@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// lESS variables
+@baseColor: #556270;
+@fontColor: #022868;
+@navBarColor: #909020;
+@orderDetailsColor: #6e42f4;
+
+// LESS mixin
+.backgroundColor {
+  background: linear-gradient(left top, @baseColor, #FF6B6B);
+  background: -webkit-linear-gradient(left top, @baseColor, #FF6B6B);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-model: border-box;
+}
+
+body {
+  max-width: 600px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  .backgroundColor;
+}
+
+h1 {
+  position: relative;
+  left: 1.3em;
+  text-align: center;
+  background-color: #cc99ff;
+  margin: 1em 2em 2em;
+  height: 1.5em;
+  width: 600px;
+  line-height: 1.5em;
+}
+
+#location {
+  position: relative;
+  top: -3em;
+  left: 5em;
+}
+
+#location > p:first-child {
+  position: relative;
+  font-weight: bold;
+  color: @fontColor;
+}
+
+form {
+  border: 2px solid black;
+  padding: 1em;
+  margin: 0em 5em 5em;
+  display: block;
+  text-align: center;
+  width: 600px;
+}
+
+form * {
+  margin: 0.7em;
+  left: 0.2em;
+  position:relative;
+}
+
+.session_bookingForm-input {
+  width: 20em;
+  height: 2em;
+}
+
+#session_bookingForm-timeslots, #session_bookingForm-therapy {
+  height: 1.5em;
+  text-align: center;
+}
+
+#submit {
+  color: @fontColor;
+  font-weight:bold;
+  height: 2em;
+  width: 15em;
+  background-color: #239013;
+}
+
+.therapy__price, .therapy {
+  opacity: 0;
+  background-color:@orderDetailsColor ;
+  color: @fontColor;
+  width: 7em;
+  height: 2em;
+  position: relative;
+  float: right;
+  bottom: 40em;
+  left: 30em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#product {
+  position: relative;
+  top: 2em;
+  left: 5em;
+
+}
+
+#product_details{
+  list-style-type: none;
+}
+
+#product > p:first-child {
+  font-weight: bold;
+  position: relative;
+  bottom: 2.5em;
+  color: @fontColor;
+}
+
+#product_currencies {
+  position: relative;
+  bottom: 1.2em;
+  left: 0.4em;
+}
+
+.product_image {
+  position: relative;
+  width: 9em;
+  height: 8em;
+  border: 2px solid @orderDetailsColor;
+  margin: 2em;
+}
+
+.product_price {
+  position: relative;
+  bottom: 7em;
+  left: 20em;
+  font-weight: bold;
+  color: @fontColor;
+}
+
+.product_buy{
+  position: relative;
+  bottom: 6em;
+  left: 20em;
+  width: 5em;
+  height: 2em;
+  background-color: @orderDetailsColor;
+}

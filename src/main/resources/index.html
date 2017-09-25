@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8"/>
+  <title>Aromatherapy </title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet/less" type="text/css" href="./project1/css/index.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </head>
+<body>
+  <header>
+    <h1>Pure Aromatherapy</h1>
+  </header>
+  <article>
+    <section id="location">
+      <p>Select Location To Book Your Session</p> <br>
+      <select id ="locations_suburbs">
+        <option value="Brisbane">Brisbane city</option>
+        <option value="Newmarket">Newmarket</option>
+        <option value="Kedron">Kedron</option>
+        <option value="Oxley">Oxley</option>
+      </select>
+    </section>
+    <section>
+      <form id="session_bookingForm">
+        Location:
+        <input type="text" name="location" class="session_bookingForm-input"><br>
+        Address:
+        <input type="text" name="address" class="session_bookingForm-input"><br>
+        Contact:
+        <input type="text" name="contact" class="session_bookingForm-input"><br>
+        Phone:
+        <input type="text" name="phone" class="session_bookingForm-input"><br>
+        Please select aromatherapy most appropriate to you:<br>
+        <select id="session_bookingForm-therapy">
+          <option value="Please select therapy" disabled="disabled" selected="true">Please select therapy</option>
+          <option value="Essential oils">Essential oils</option>
+          <option value="Clay mask">Clay mask</option>
+          <option value="Sea salt">Sea salt</option><br>
+        <select><br>
+        TimeSlots:<br>
+        <select id="session_bookingForm-timeslots">
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+        </select><br>
+        May I have your name please<br>
+        <input type="text" name="custName" id="custName"><br>
+        Your contact number please<br>
+        <input type="text" name="custPhone" id="custPhone"><br>
+        <br>
+        <button type="button" id="book">Book your appointment</button>
+      </form>
+    </section>
+    <section id="product">
+      <p>Select Currency To Purchase Our Products</p> <br>
+      <select id="product_currencies">
+        <option value="AU Dollar">AU Dollar</option>
+        <option value="NZ Dollar">NZ Dollar</option>
+      </select>
+      <ul id="product_details">
+        <li><img class="product_image" src="./project1/images/essential_oils.jpg" alt="Essential Oils">
+            <p class="product_price">AU $50</p>
+            <button type="button" class="product_buy">Buy</button>
+        </li>
+        <li><img class="product_image" src="./project1/images/lemon_oil.jpg" alt="Lemon Oil">
+          <p class="product_price">AU $30</p>
+          <button type="button" class="product_buy">Buy</button>
+        </li>
+        <li><img class="product_image" src="./project1/images/stress_buster.jpg" alt="Stress">
+          <p class="product_price">AU $70</p>
+          <button type="button" class="product_buy">Buy</button>
+        </li>
+      </ul>
+    </section>
+  </article>
+  <aside>
+    <section>
+      <div class="therapy__price"></div>
+      <div class="therapy"></div>
+    </section>
+  </aside>
+  <script src="./project1/index.js"></script>
+</body>
+</html>
