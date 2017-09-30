@@ -11,6 +11,16 @@
   background: -webkit-linear-gradient(left top, @baseColor, #FF6B6B);
 }
 
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+.highlight {
+  color: yellow;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,28 +28,74 @@
 }
 
 body {
-  max-width: 600px;
+  max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  font-weight: 300;
   .backgroundColor;
+  overflow-x: hidden;
 }
 
-h1 {
+h#eader {
   position: relative;
-  left: 1.3em;
-  text-align: center;
-  background-color: #cc99ff;
-  margin: 1em 2em 2em;
-  height: 1.5em;
-  width: 600px;
-  line-height: 1.5em;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#header_image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#header_menuicon {
+  position: absolute;
+  bottom: 90%;
+  left: 90%;
+  width: 30px;
+  border-radius: 100%;
+}
+
+#header_text {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  color: @fontColor;
+  font-weight: 900;
+  font-variant: small-caps;
+  font-synthesis: weight;
+}
+
+#header_nav {
+  position: absolute;
+  top: 100px;
+  left: 210px;
+}
+
+.header_nav-listItem {
+  list-style: none;
+}
+
+.header_nav-listItem-link {
+  text-decoration: none;
+  position :relative;
+  line-height: 10px;
+  display: block;
+  left: 80%;
+  bottom: 30px;
+  padding: 10px;
+  font-weight: 800;
+}
+
+.header_nav-listItem-link:hover {
+  background-color: yellow;
 }
 
 #location {
   position: relative;
-  top: -3em;
-  left: 5em;
+  top: -1em;
+  left: 2em;
 }
 
 #location > p:first-child {
@@ -48,37 +104,32 @@ h1 {
   color: @fontColor;
 }
 
-form {
-  border: 2px solid black;
+#session_bookingForm {
   padding: 1em;
-  margin: 0em 5em 5em;
   display: block;
-  text-align: center;
   width: 600px;
+  border-style: none;
+  width: 100%;
+  height: auto;
+  position: relative
+  float: left;
 }
 
-form * {
-  margin: 0.7em;
-  left: 0.2em;
-  position:relative;
+session_bookingForm label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
-.session_bookingForm-input {
-  width: 20em;
-  height: 2em;
+#session_bookingForm * {
+  padding: 0.7em;
+  position: relative;
+  width: 80%;
+  margin-bottom: 1em;
 }
 
-#session_bookingForm-timeslots, #session_bookingForm-therapy {
-  height: 1.5em;
-  text-align: center;
-}
-
-#submit {
-  color: @fontColor;
-  font-weight:bold;
-  height: 2em;
-  width: 15em;
-  background-color: #239013;
+#book {
+  width: 40%;
+  left: 30%;
 }
 
 .therapy__price, .therapy {
@@ -98,8 +149,7 @@ form * {
 #product {
   position: relative;
   top: 2em;
-  left: 5em;
-
+  left: 2em;
 }
 
 #product_details{
@@ -107,16 +157,16 @@ form * {
 }
 
 #product > p:first-child {
-  font-weight: bold;
-  position: relative;
-  bottom: 2.5em;
-  color: @fontColor;
+    position: relative;
+    font-weight: bold;
+    color: @fontColor;
+    top: -20px;
 }
 
 #product_currencies {
   position: relative;
   bottom: 1.2em;
-  left: 0.4em;
+  left: 0.2em;
 }
 
 .product_image {
@@ -124,13 +174,14 @@ form * {
   width: 9em;
   height: 8em;
   border: 2px solid @orderDetailsColor;
-  margin: 2em;
+  margin: 1em;
+  left: -2em;
 }
 
 .product_price {
   position: relative;
   bottom: 7em;
-  left: 20em;
+  left: 55%;
   font-weight: bold;
   color: @fontColor;
 }
@@ -138,8 +189,81 @@ form * {
 .product_buy{
   position: relative;
   bottom: 6em;
-  left: 20em;
+  left: 55%;
   width: 5em;
   height: 2em;
   background-color: @orderDetailsColor;
+}
+
+@media only screen and (min-width: 420px) {
+    #header_image {
+      height: 500px;
+    }
+    #header_text  {
+      top: 400px;
+      left: 30px;
+      font-size: 500%;
+      font-weight: bolder;
+    }
+    #header_menuicon {
+      display: none;
+    }
+
+    #header_nav {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .header_nav-listItem {
+      float: right;
+      margin-right: 110px;
+      padding-right: 2px;
+      position: relative;
+      top: -450px;
+    }
+
+    .header_nav-listItem-link {
+        float: left;
+        display: inline-block;
+    }
+
+    #session_bookingForm {
+      border: 1px solid black;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    #session_bookingForm label {
+      font-weight: bold;
+
+    }
+
+    #session_bookingForm * {
+      text-align: left;
+      position: relative;
+      width: 30%;
+      display: inline;
+      margin-bottom: 1em;
+    }
+
+   #product_details  li {
+     display: inline-block;
+     padding: 5em;
+   }
+
+    .product_price {
+      bottom: -2em;
+      left: 75%;
+    }
+
+    .product_buy {
+      bottom: -3em;
+      left: 70%;
+    }
+
+    .product_image {
+      left: 50%;
+    }
+
 }

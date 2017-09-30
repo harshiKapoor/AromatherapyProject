@@ -5,17 +5,26 @@
   <meta charset="utf-8"/>
   <title>Aromatherapy </title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet/less" type="text/css" href="./project1/css/index.less">
+  <link rel="stylesheet/less" type="text/css" href="css/index.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   </head>
 <body>
-  <header>
-    <h1>Pure Aromatherapy</h1>
+  <header id="header">
+    <h1><img id="header_image" src="images/header_image.jpg" alt="header image"/></h1>
+    <img id="header_menuicon" src="images/three_line_menu_icon.png" alt="menu"/>
+    <h2 id="header_text">Pure Aromatherapy</h2>
+    <nav>
+      <ul id="header_nav" class="hide">
+          <li class="header_nav-listItem"><a class="header_nav-listItem-link" href="#booksession">Sessions</a></li>
+          <li class="header_nav-listItem"><a class="header_nav-listItem-link" href="#product">Products</a></li>
+          <li class="header_nav-listItem"><a class="header_nav-listItem-link" href="#">About us</a></li>
+      </ul>
+    </nav>
   </header>
-  <article>
+  <article id="wrapper">
     <section id="location">
-      <p>Select Location To Book Your Session</p> <br>
+      <p>Our Locations</p> <br>
       <select id ="locations_suburbs">
         <option value="Brisbane">Brisbane city</option>
         <option value="Newmarket">Newmarket</option>
@@ -23,53 +32,52 @@
         <option value="Oxley">Oxley</option>
       </select>
     </section>
-    <section>
+    <section id="booksession">
       <form id="session_bookingForm">
-        Location:
-        <input type="text" name="location" class="session_bookingForm-input"><br>
-        Address:
-        <input type="text" name="address" class="session_bookingForm-input"><br>
-        Contact:
-        <input type="text" name="contact" class="session_bookingForm-input"><br>
-        Phone:
-        <input type="text" name="phone" class="session_bookingForm-input"><br>
-        Please select aromatherapy most appropriate to you:<br>
+        <label>Location<label>
+        <input type="text" name="location" class="session_bookingForm-input">
+        <label>Address<label>
+        <input type="text" name="address" class="session_bookingForm-input">
+        <label>Contact<label>
+        <input type="text" name="contact" class="session_bookingForm-input">
+        <label>Phone<label>
+        <input type="text" name="phone" class="session_bookingForm-input">
+        <label>Aromatherapy <label>
         <select id="session_bookingForm-therapy">
           <option value="Please select therapy" disabled="disabled" selected="true">Please select therapy</option>
           <option value="Essential oils">Essential oils</option>
           <option value="Clay mask">Clay mask</option>
-          <option value="Sea salt">Sea salt</option><br>
-        <select><br>
-        TimeSlots:<br>
+          <option value="Sea salt">Sea salt</option>
+        </select>
+        <label>TimeSlots<label>
         <select id="session_bookingForm-timeslots">
           <option value="9:00">9:00</option>
           <option value="10:00">10:00</option>
           <option value="11:00">11:00</option>
         </select><br>
-        May I have your name please<br>
+        <label>May I have your name please<label>
         <input type="text" name="custName" id="custName"><br>
-        Your contact number please<br>
+        <label>Your contact number please<label>
         <input type="text" name="custPhone" id="custPhone"><br>
-        <br>
         <button type="button" id="book">Book your appointment</button>
       </form>
     </section>
     <section id="product">
-      <p>Select Currency To Purchase Our Products</p> <br>
+      <p>Select Your Currency</p> <br>
       <select id="product_currencies">
         <option value="AU Dollar">AU Dollar</option>
         <option value="NZ Dollar">NZ Dollar</option>
       </select>
       <ul id="product_details">
-        <li><img class="product_image" src="./project1/images/essential_oils.jpg" alt="Essential Oils">
+        <li><img class="product_image" src="images/essential_oils.jpg" alt="Essential Oils">
             <p class="product_price">AU $50</p>
             <button type="button" class="product_buy">Buy</button>
         </li>
-        <li><img class="product_image" src="./project1/images/lemon_oil.jpg" alt="Lemon Oil">
+        <li><img class="product_image" src="images/lemon_oil.jpg" alt="Lemon Oil">
           <p class="product_price">AU $30</p>
           <button type="button" class="product_buy">Buy</button>
         </li>
-        <li><img class="product_image" src="./project1/images/stress_buster.jpg" alt="Stress">
+        <li><img class="product_image" src="images/stress_buster.jpg" alt="Stress">
           <p class="product_price">AU $70</p>
           <button type="button" class="product_buy">Buy</button>
         </li>
@@ -82,6 +90,6 @@
       <div class="therapy"></div>
     </section>
   </aside>
-  <script src="./project1/index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

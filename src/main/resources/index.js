@@ -1,7 +1,18 @@
 $(document).ready(function(){
 
+  $('#header_menuicon').click(function() {
+      $('#header_nav').toggleClass('hide');
+  });
+
+  if($(window).width() >= 600) {
+      $('#header_nav').removeClass('hide');
+  };
+
+  $('.header_nav-listItem').hover(function() {
+    $('.header_nav-listItem-link').fadeIn('slow');
+  });
   // click product buy button
-  $('.product_buy').on('click',function(e){
+  $('.product_buy').on('click',function(){
     alert("Adding"+ " "+ $(this).siblings('img').attr('alt')+" "+"To Your Shopping Cart");
   });
 

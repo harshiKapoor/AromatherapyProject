@@ -1,4 +1,5 @@
-package com.aromatherapy.selenium.stepDefs;
+package com.aromatherapy.selenium.stepdefs;
+
 
 import com.aromatherapy.selenium.pages.products;
 import cucumber.api.java.en.Given;
@@ -7,6 +8,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class productSteps {
@@ -43,6 +45,7 @@ public class productSteps {
     @When("^I dont change the currency$")
     public void i_dont_change_the_currency() throws Throwable {
         defaultSelectedCurrency = products.getDefaultCurrencyFromCurrencyOptions();
+
     }
 
     @Then("^I should see prices displayed out in AU Dollars$")

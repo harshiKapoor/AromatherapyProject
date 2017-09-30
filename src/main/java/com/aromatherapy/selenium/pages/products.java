@@ -1,6 +1,7 @@
 package com.aromatherapy.selenium.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +24,12 @@ public class products {
 
     public products(WebDriver driver) {
         this.driver = driver;
-        baseUrl = "http://localhost:3000/";
+        baseUrl = "http://localhost:3000/src/main/resources/";
         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
         driver.get(baseUrl);
         waitForPageToLoad();
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("scroll(0, 250);");
     }
 
     public void waitForPageToLoad() {
