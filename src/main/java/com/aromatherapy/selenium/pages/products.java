@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,8 +19,12 @@ public class products {
     private String baseUrl;
     private String NZDollar = "NZ Dollar";
     //locators
-    private String productCurrencies = "product_currencies";
-    private String productDetails = "product_details";
+    @FindBy(id = "product_currencies")
+    private WebElement productCurrencies;
+
+    @FindBy(id= "product_details")
+    private WebElement productDetails ;
+
     private String productBuyButton = "product_buy";
 
     public products(WebDriver driver) {
@@ -39,20 +44,20 @@ public class products {
 
     // get default currency
     public String getDefaultCurrencyFromCurrencyOptions() {
-        Select dropDownList = new Select(driver.findElement(By.id(productCurrencies)));
+        Select dropDownList = new Select(productCurrencies);
         return (dropDownList.getFirstSelectedOption().getText());
     }
 
     // select currency from options
     public String selectCurrencyFromCurrencyOptions() {
-        Select dropDownList = new Select(driver.findElement(By.id(productCurrencies)));
+        Select dropDownList = new Select(productCurrencies);
         dropDownList.selectByValue(NZDollar);
         return dropDownList.getFirstSelectedOption().getText();
     }
 
     // get price with currency for all products
     public ArrayList<String> getPriceAndCurrencyForProducts() {
-        WebElement product_list = driver.findElement(By.id(productDetails));
+        WebElement product_list = productDetails;
         List<WebElement> products = product_list.findElements(By.tagName("p"));
         ArrayList<String> values = new ArrayList<String>();
         for (WebElement p : products) {

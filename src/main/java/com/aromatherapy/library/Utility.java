@@ -1,15 +1,13 @@
 package com.aromatherapy.library;
 
 import com.sun.jna.platform.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Set;
-
-import org.openqa.selenium.Cookie;
 
 public class Utility {
 
@@ -29,6 +27,15 @@ public class Utility {
 
     public static Cookie getSpecificCookie(WebDriver driver, String cookieName){
         return driver.manage().getCookieNamed(cookieName);
+    }
+
+    public static String getCssValue(WebDriver driver ,String attributeName, String id) {
+        return driver.findElement(By.id(id)).getCssValue(attributeName);
+    }
+
+    public static void performMouseHover(WebDriver driver, String id) {
+        Actions action = new Actions(driver);
+        action.moveToElement(driver.findElement(By.id(id))).perform();
     }
 
 

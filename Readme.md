@@ -38,7 +38,12 @@ It is a maven project with focus on creating following automation test suite. Al
 
 ##Frontend Technology
 ```
- Html, CSS, Javascript, JQuery, Ajax, Responsive Design   
+ Html, CSS, Javascript, JQuery, Ajax   
+```
+
+##Design Considerations
+```
+Responsive web design
 ```
 
 ## Getting Started
